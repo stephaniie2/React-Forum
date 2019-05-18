@@ -5,14 +5,14 @@ import { GET_CHANNELS } from "./actions/channels";
 const reducer = (state, action) => {
   if (action.type === GET_CHANNELS) {
     return {
-      channels: action.payload
+      loadChannels: action.payload
     };
   }
   return state;
 };
 
 const initialState = {
-  channels: []
+  loadChannels: []
 };
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
